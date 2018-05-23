@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @participation.content %>
+</p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @participation.user_name %>
+</p>
+
+<p>
+  <strong>Is recommend:</strong>
+  <%= @participation.is_recommend %>
+</p>
+
+<p>
+  <strong>Is public:</strong>
+  <%= @participation.is_public %>
+</p>
+
+<%= link_to 'Edit', edit_participation_path(@participation) %> |
+<%= link_to 'Back', participations_path %>

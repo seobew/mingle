@@ -8,3 +8,7 @@
 10.times do
   Content.create(title: Faker::Book.title, description: Faker::Movie.quote, views: Faker::Number.between(1,200), downloads: Faker::Number.between(1,200), is_public: Faker::Boolean.boolean)
 end
+
+10.times do
+  Participation.create(content_id: Faker::Number.between(1,10), user_name: Faker::Name.name, is_recommend: Faker::Boolean.boolean, is_public: Faker::Boolean.boolean)
+end
