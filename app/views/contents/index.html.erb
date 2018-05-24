@@ -1,5 +1,8 @@
-<p id="notice"><%= notice %></p>
+<%= javascript_pack_tag 'application' %>
+<%= react_component 'Contentlist', {data: @contents }, prerender: true %>
 
+<!--
+<p id="notice"><%# notice %></p>
 <h1>Contents</h1>
 
 <table>
@@ -15,21 +18,22 @@
   </thead>
 
   <tbody>
-    <% @contents.each do |content| %>
+    <%# @contents.each do |content| %>
       <tr>
-        <td><%= content.title %></td>
-        <td><%= content.description %></td>
-        <td><%= content.views %></td>
-        <td><%= content.downloads %></td>
-        <td><%= content.is_public %></td>
-        <td><%= link_to 'Show', content %></td>
-        <td><%= link_to 'Edit', edit_content_path(content) %></td>
-        <td><%= link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%# content.title %></td>
+        <td><%# content.description %></td>
+        <td><%# content.views %></td>
+        <td><%# content.downloads %></td>
+        <td><%# content.is_public %></td>
+        <td><%# link_to 'Show', content %></td>
+        <td><%# link_to 'Edit', edit_content_path(content) %></td>
+        <td><%# link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
+    <%# end %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Content', new_content_path %>
+<%# link_to 'New Content', new_content_path %>
+-->
