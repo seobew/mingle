@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180523165451) do
+ActiveRecord::Schema.define(version: 20180524081053) do
 
   create_table "contents", force: :cascade do |t|
     t.string "title"
@@ -20,6 +20,14 @@ ActiveRecord::Schema.define(version: 20180523165451) do
     t.boolean "is_public"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo_file_name"
+    t.string "photo_content_type"
+    t.integer "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.string "sample_file_name"
+    t.string "sample_content_type"
+    t.integer "sample_file_size"
+    t.datetime "sample_updated_at"
   end
 
   create_table "participations", force: :cascade do |t|

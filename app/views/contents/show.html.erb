@@ -25,5 +25,15 @@
   <%= @content.is_public %>
 </p>
 
+<p>
+  <strong>Photo:</strong>
+  <%= image_tag @content.photo.url(:medium) %>
+</p>
+
+<p>
+  <strong>Sample:</strong>
+  <%= image_tag @content.sample.url(:medium) %>
+</p>
+
 <%= link_to 'Edit', edit_content_path(@content) %> |
 <%= link_to 'Back', contents_path %>
