@@ -20,5 +20,10 @@
   <%= @participation.is_public %>
 </p>
 
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @participation.image.url(:medium) %>
+</p>
+
 <%= link_to 'Edit', edit_participation_path(@participation) %> |
 <%= link_to 'Back', participations_path %>
